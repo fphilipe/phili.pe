@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+	<head>
+		<meta charset='utf-8' />
+		<title>Hi. I’m Philipe Fatio.</title>
+		<script type="text/javascript" src="http://use.typekit.com/nkt5dnd.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+				text-rendering: optimizeLegibility;
+			}
+			html, body {
+				color: #444;
+				font-size: 18pt;
+				font-weight: 400;
+				line-height: 1.2;
+				overflow-x: hidden;
+			}
+			
+			p > a {
+				background: #FEFDAE;
+				-webkit-transition: background-color .2s ease-out;
+				-moz-transition: background-color .2s ease-out;
+				color: inherit;
+				text-decoration: none;
+				padding: .2em .2em 0;
+				margin: -.2em -.1em 0;
+			}
+			
+			p > a:active {
+				position: relative;
+				top: 1px;
+			}
+			
+			sup {
+				line-height: 0.1;
+			}
+			
+			sup a {
+				font-size: 85%;
+				text-decoration: none;
+				color: inherit;
+			}
+			
+			section {
+				display: block;
+				width: 746px;
+				margin: 2em auto;
+			}
+			
+			header {
+				position: relative;
+				background: #E5E5E5;
+				-webkit-box-shadow: 0 2px 3px rgba(0,0,0,.35);
+				-moz-box-shadow: 0 2px 3px rgba(0,0,0,.35);
+				display: block;
+			}
+			
+			#links {
+				position: relative;
+			}
+			
+			#links ul {
+				-webkit-transition: opacity .1s ease-out;
+				-moz-transition: opacity .1s ease-out;
+				height: 74px;
+				list-style: none;
+				opacity: .75;
+			}
+			
+			#links ul:hover {
+				opacity: 1;
+			}
+			
+			#links li {
+				float: left;
+				width: 74px;
+				height: 74px;
+				margin-right: 10px;
+				background: #fff url(social.png) no-repeat;
+			}
+			
+			#links li:last-child {
+				margin: 0;
+			}
+			
+			#links a {
+				color: inherit;
+				text-decoration: none;
+				-webkit-transition: opacity .2s ease-out;
+				-moz-transition: opacity .2s ease-out;
+				display: inline-block;
+				width: 74px;
+				height: 74px;
+				background: #fff url(social.png) no-repeat;
+			}
+			
+			#links a span {
+				pointer-events: none;
+				-webkit-transition: opacity .2s ease-out .1s;
+				-moz-transition: opacity .2s ease-out .1s;
+				position: absolute;
+				top: 0;
+				left: 0;
+				opacity: 0;
+				font-style: italic;
+			}
+			
+			#links a span::before {
+				content: "Find me on the web:";
+				font-style: normal;
+				margin-right: .5em;
+				opacity: 0;
+			}
+
+			#links a:hover span {
+				opacity: 1;
+			}
+			
+			#links ul:hover a {
+				opacity: 0;
+			}
+			
+			#links a:hover {
+				opacity: 1 !important;
+			}
+			
+			#links #twitter a   { background-position: 0      -74px; }
+			#links #dribbble a  { background-position: -74px  -74px; }
+			#links #last-fm a   { background-position: -148px -74px; }
+			#links #gowalla a   { background-position: -222px -74px; }
+			#links #skype a     { background-position: -296px -74px; }
+			#links #facebook a  { background-position: -370px -74px; }
+			#links #github a    { background-position: -444px -74px; }
+			#links #mail a      { background-position: -518px -74px; }
+			#links #linked-in a { background-position: -592px -74px; }
+
+			#links #twitter   { background-position: 0      0; }
+			#links #dribbble  { background-position: -74px  0; }
+			#links #last-fm   { background-position: -148px 0; }
+			#links #gowalla   { background-position: -222px 0; }
+			#links #skype     { background-position: -296px 0; }
+			#links #facebook  { background-position: -370px 0; }
+			#links #github    { background-position: -444px 0; }
+			#links #mail      { background-position: -518px 0; }
+			#links #linked-in { background-position: -592px 0; }
+
+			h1 {
+				-webkit-mask-image: -webkit-gradient(linear, left top,
+				    left bottom, from(rgba(0,0,0,1)), color-stop(0, rgba(0,0,0,1)), to(rgba(0,0,0,.4)));
+				color: #666;
+				text-shadow: 0 1px 0 #fff;
+				padding: .5em 0 .3em;
+				text-align: center;
+				font-size: 72pt;
+				position: relative;
+				margin-bottom: .5em;
+			}
+			
+			header::after {
+				content: url(http://gravatar.com/avatar/e29f04f339715955060858e0e65e1311.png?s=100);
+				position: absolute;
+				bottom: -50px;
+				right: 25px;
+				padding: 5px;
+				background: #fff;
+				width: 100px;
+				height: 100px;
+				border: 1px solid #aaa;
+				-webkit-box-shadow: 0 2px 3px rgba(0,0,0,.25);
+				-moz-box-shadow: 0 2px 3px rgba(0,0,0,.25);
+				-webkit-transform: rotate(5deg);
+				-moz-transform: rotate(5deg);
+			}
+			
+			h2 {
+				margin: .5em 0;
+				font-size: 1em;
+				font-weight: bolder;
+			}
+			
+			h1::after {
+				content: "Hi. I’m Philipe Fatio.";
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				color: rgba(0,0,0,.7);
+				padding: .5em 0 .4em;
+			}
+			
+			#bio {
+			}
+			
+			footer {
+				display: block;
+				width: 746px;
+				margin: 2em auto;
+				font-size: 11pt;
+				font-weight: lighter;
+			}
+			
+			#footnotes {
+				margin-bottom: 2em;
+			}
+			
+			p {
+				margin: .5em 0;
+			}
+			
+			li:target {
+				background: #FEFDAE;
+			}
+			
+			#copyright {
+				color: #999;
+			}
+		</style>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-312139-4']);
+			_gaq.push(['_trackPageview']);
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = 'http://www.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+		<header>
+			<h1>Hi. I’m Philipe Fatio.</h1>
+		</header>
+		<section id="bio">
+			<h2>I’m…</h2>
+			<p>the CTO and co-founder of <a href="http://localuncle.com/">LocalUncle</a><sup><a href="#f1">1</a></sup>, a website to get local advice.</p>
+			<p>studying mechanical engineering at <a href="http://www.ethz.ch/">ETH Zurich</a>.<sup><a href="#f2">2</a></sup>
+			<p>the developer of the <a href="http://todo.philipefatio.com/">To Do Widget</a>. It’s a bit dusty but still does its job.</p>
+		</section>
+		<section id="links">
+			<h2>Find me on the web:</h2>
+			<ul>
+				<li id="twitter"><a href="http://twitter.com/fphilipe"><span>Follow me on Twitter</span></a></li>
+				<li id="dribbble"><a href="http://dribbble.com/players/philipe"><span>Follow me on Dribbble</span></a></li>
+				<li id="last-fm"><a href="http://www.last.fm/user/fphilipe"><span>Add me on Last.fm</span></a></li>
+				<li id="gowalla"><a href="http://gowalla.com/users/fphilipe"><span>Add me on Gowalla</span></a></li>
+				<li id="skype"><a href="skype:philipe.fatio"><span>Skype me</span></a></li>
+				<li id="facebook"><a href="http://www.facebook.com/philipe.fatio"><span>Add me on Facebook</span></a></li>
+				<li id="github"><a href="https://github.com/fphilipe"><span>Fork me on GitHub</span></a></li>
+				<li id="mail"><a href="mailto:philipe.fatio@gmail.com"><span>Drop me a line</span></a></li>
+				<li id="linked-in"><a href="http://www.linkedin.com/in/philipefatio"><span>Add me on LinkedIn</span></a></li>
+			</ul>
+		</section>
+		<footer>
+			<ol id="footnotes">
+				<li id="f1">formerly known as loqize.me</li>
+				<li id="f2">that’s the same university our old pal Einstein got his physics degree from</li>
+			</ol>
+			<p id="copyright">Copyright © 2010 - 2011 Philipe Fatio</p>
+		</section>
+	</body>
+</html>
