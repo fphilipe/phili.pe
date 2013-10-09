@@ -1,264 +1,135 @@
 <!DOCTYPE html>
-<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
-	<head>
-		<meta charset='utf-8' />
-		<title>Hi. I’m Philipe Fatio.</title>
-		<script type="text/javascript" src="http://use.typekit.com/nkt5dnd.js"></script>
-		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-		<style type="text/css">
-			* {
-				margin: 0;
-				padding: 0;
-				text-rendering: optimizeLegibility;
-			}
-			html, body {
-				color: #444;
-				font-size: 18pt;
-				font-weight: 400;
-				line-height: 1.2;
-				overflow-x: hidden;
-			}
-			
-			p > a {
-				background: #FEFDAE;
-				-webkit-transition: background-color .2s ease-out;
-				-moz-transition: background-color .2s ease-out;
-				color: inherit;
-				text-decoration: none;
-				padding: .2em .2em 0;
-				margin: -.2em -.1em 0;
-			}
-			
-			p > a:active {
-				position: relative;
-				top: 1px;
-			}
-			
-			sup {
-				line-height: 0.1;
-			}
-			
-			sup a {
-				font-size: 85%;
-				text-decoration: none;
-				color: inherit;
-			}
-			
-			section {
-				display: block;
-				width: 746px;
-				margin: 2em auto;
-			}
-			
-			header {
-				position: relative;
-				background: #E5E5E5;
-				-webkit-box-shadow: 0 2px 3px rgba(0,0,0,.35);
-				-moz-box-shadow: 0 2px 3px rgba(0,0,0,.35);
-				display: block;
-			}
-			
-			#links {
-				position: relative;
-			}
-			
-			#links ul {
-				-webkit-transition: opacity .1s ease-out;
-				-moz-transition: opacity .1s ease-out;
-				height: 74px;
-				list-style: none;
-				opacity: .75;
-			}
-			
-			#links ul:hover {
-				opacity: 1;
-			}
-			
-			#links li {
-				float: left;
-				width: 74px;
-				height: 74px;
-				margin-right: 10px;
-				background: #fff url(social.png) no-repeat;
-			}
-			
-			#links li:last-child {
-				margin: 0;
-			}
-			
-			#links a {
-				color: inherit;
-				text-decoration: none;
-				-webkit-transition: opacity .2s ease-out;
-				-moz-transition: opacity .2s ease-out;
-				display: inline-block;
-				width: 74px;
-				height: 74px;
-				background: #fff url(social.png) no-repeat;
-			}
-			
-			#links a span {
-				pointer-events: none;
-				-webkit-transition: opacity .2s ease-out .1s;
-				-moz-transition: opacity .2s ease-out .1s;
-				position: absolute;
-				top: 0;
-				left: 0;
-				opacity: 0;
-				font-style: italic;
-			}
-			
-			#links a span::before {
-				content: "Find me on the web:";
-				font-style: normal;
-				margin-right: .5em;
-				opacity: 0;
-			}
-
-			#links a:hover span {
-				opacity: 1;
-			}
-			
-			#links ul:hover a {
-				opacity: 0;
-			}
-			
-			#links a:hover {
-				opacity: 1 !important;
-			}
-			
-			#links #twitter a   { background-position: 0      -74px; }
-			#links #dribbble a  { background-position: -74px  -74px; }
-			#links #last-fm a   { background-position: -148px -74px; }
-			#links #gowalla a   { background-position: -222px -74px; }
-			#links #skype a     { background-position: -296px -74px; }
-			#links #facebook a  { background-position: -370px -74px; }
-			#links #github a    { background-position: -444px -74px; }
-			#links #mail a      { background-position: -518px -74px; }
-			#links #linked-in a { background-position: -592px -74px; }
-
-			#links #twitter   { background-position: 0      0; }
-			#links #dribbble  { background-position: -74px  0; }
-			#links #last-fm   { background-position: -148px 0; }
-			#links #gowalla   { background-position: -222px 0; }
-			#links #skype     { background-position: -296px 0; }
-			#links #facebook  { background-position: -370px 0; }
-			#links #github    { background-position: -444px 0; }
-			#links #mail      { background-position: -518px 0; }
-			#links #linked-in { background-position: -592px 0; }
-
-			h1 {
-				-webkit-mask-image: -webkit-gradient(linear, left top,
-				    left bottom, from(rgba(0,0,0,1)), color-stop(0, rgba(0,0,0,1)), to(rgba(0,0,0,.4)));
-				color: #666;
-				text-shadow: 0 1px 0 #fff;
-				padding: .5em 0 .3em;
-				text-align: center;
-				font-size: 72pt;
-				position: relative;
-				margin-bottom: .5em;
-			}
-			
-			header::after {
-				content: url(http://gravatar.com/avatar/e29f04f339715955060858e0e65e1311.png?s=100);
-				position: absolute;
-				bottom: -50px;
-				right: 25px;
-				padding: 5px;
-				background: #fff;
-				width: 100px;
-				height: 100px;
-				border: 1px solid #aaa;
-				-webkit-box-shadow: 0 2px 3px rgba(0,0,0,.25);
-				-moz-box-shadow: 0 2px 3px rgba(0,0,0,.25);
-				-webkit-transform: rotate(5deg);
-				-moz-transform: rotate(5deg);
-			}
-			
-			h2 {
-				margin: .5em 0;
-				font-size: 1em;
-				font-weight: bolder;
-			}
-			
-			h1::after {
-				content: "Hi. I’m Philipe Fatio.";
-				position: absolute;
-				top: 0;
-				left: 0;
-				right: 0;
-				color: rgba(0,0,0,.7);
-				padding: .5em 0 .4em;
-			}
-			
-			#bio {
-			}
-			
-			footer {
-				display: block;
-				width: 746px;
-				margin: 2em auto;
-				font-size: 11pt;
-				font-weight: lighter;
-			}
-			
-			#footnotes {
-				margin-bottom: 2em;
-			}
-			
-			p {
-				margin: .5em 0;
-			}
-			
-			li:target {
-				background: #FEFDAE;
-			}
-			
-			#copyright {
-				color: #999;
-			}
-		</style>
-	</head>
-	<body>
-		<script type="text/javascript">
-			var _gaq = _gaq || [];
-			_gaq.push(['_setAccount', 'UA-312139-4']);
-			_gaq.push(['_trackPageview']);
-			(function() {
-				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-				ga.src = 'http://www.google-analytics.com/ga.js';
-				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-			})();
-		</script>
-		<header>
-			<h1>Hi. I’m Philipe Fatio.</h1>
-		</header>
-		<section id="bio">
-			<h2>I’m…</h2>
-			<p>the CTO and co-founder of <a href="http://localuncle.com/">LocalUncle</a><sup><a href="#f1">1</a></sup>, a website to get local advice.</p>
-			<p>studying mechanical engineering at <a href="http://www.ethz.ch/">ETH Zurich</a>.<sup><a href="#f2">2</a></sup>
-			<p>the developer of the <a href="http://todo.philipefatio.com/">To Do Widget</a>. It’s a bit dusty but still does its job.</p>
-		</section>
-		<section id="links">
-			<h2>Find me on the web:</h2>
-			<ul>
-				<li id="twitter"><a href="http://twitter.com/fphilipe"><span>Follow me on Twitter</span></a></li>
-				<li id="dribbble"><a href="http://dribbble.com/players/philipe"><span>Follow me on Dribbble</span></a></li>
-				<li id="last-fm"><a href="http://www.last.fm/user/fphilipe"><span>Add me on Last.fm</span></a></li>
-				<li id="gowalla"><a href="http://gowalla.com/users/fphilipe"><span>Add me on Gowalla</span></a></li>
-				<li id="skype"><a href="skype:philipe.fatio"><span>Skype me</span></a></li>
-				<li id="facebook"><a href="http://www.facebook.com/philipe.fatio"><span>Add me on Facebook</span></a></li>
-				<li id="github"><a href="https://github.com/fphilipe"><span>Fork me on GitHub</span></a></li>
-				<li id="mail"><a href="mailto:philipe.fatio@gmail.com"><span>Drop me a line</span></a></li>
-				<li id="linked-in"><a href="http://www.linkedin.com/in/philipefatio"><span>Add me on LinkedIn</span></a></li>
-			</ul>
-		</section>
-		<footer>
-			<ol id="footnotes">
-				<li id="f1">formerly known as loqize.me</li>
-				<li id="f2">that’s the same university our old pal Einstein got his physics degree from</li>
-			</ol>
-			<p id="copyright">Copyright © 2010 - 2011 Philipe Fatio</p>
-		</section>
-	</body>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="author" content="https://plus.google.com/102520841295892532965?rel=author">
+    <meta name="description" content="I’m a freelance software developer and a mechanical engineering student. I also write open source software.">
+    <meta name="keywords" content="open source, open source software, philipe, fatio, philipe fatio">
+    <title>Hi. I’m Philipe Fatio.</title>
+    <script type="text/javascript" src="http://use.typekit.com/nkt5dnd.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <style type="text/css">
+@-webkit-keyframes roll {
+  0% { opacity: 0; -webkit-transform: translateX(-150%) rotate(-180deg); }
+  75% { opacity: 1; -webkit-transform: translateX(10%) rotate(12deg); }
+  100% { -webkit-transform: translateX(0px) rotate(0deg); }
+}
+@-moz-keyframes roll {
+  0% { opacity: 0; -moz-transform: translateX(-150%) rotate(-180deg); }
+  75% { opacity: 1; -moz-transform: translateX(10%) rotate(12deg); }
+  100% { -moz-transform: translateX(0px) rotate(0deg); }
+}
+@keyframes roll {
+  0% { opacity: 0; transform: translateX(-150%) rotate(-180deg); }
+  75% { opacity: 1; transform: translateX(10%) rotate(12deg); }
+  100% { transform: translateX(0px) rotate(0deg); }
+}
+.roll {
+  -webkit-animation-name: roll;
+  -moz-animation-name: roll;
+  animation-name: roll;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-out;;
+  -moz-animation-timing-function: ease-out;;
+  -ms-animation-timing-function: ease-out;;
+  animation-timing-function: ease-out;;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 14pt;
+  text-rendering: optimizeLegibility;
+}
+html {
+  display: table;
+  width: 100%;
+  height: 100%;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+}
+body {
+  color: #444;
+  font-weight: 300;
+  display: table;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.wrap {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.content {
+  display: inline-block;
+  text-align: left;
+  padding: 1em;
+  max-width: 20em;
+}
+p {
+  line-height: 1.25;
+  margin: 0.5em 0;
+}
+h1 {
+  text-align: center;
+  margin: 1em 0;
+  font-weight: 500;
+}
+.avatar {
+  display: block;
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+a {
+  color: inherit;
+  display: inline-block;
+  text-decoration: none;
+  line-height: 1;
+  border-bottom: 2px solid #ccc;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+a:hover {
+  background: #ddd;
+  border: 2px solid #ddd;
+  margin-left: -2px;
+  margin-right: -2px;
+  border-radius: 3px;
+}
+a:active {
+  background: #444;
+  color: white;
+  border: 2px solid #444;
+  margin-left: -2px;
+  margin-right: -2px;
+  border-radius: 3px;
+}
+    </style>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-312139-4']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = 'http://www.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </head>
+  <body ontouchstart="">
+    <div class='wrap'>
+      <div class='content'>
+        <img class='avatar' src="http://gravatar.com/avatar/e29f04f339715955060858e0e65e1311.png?s=100" alt="Me" onload="this.className+=' roll'">
+        <h1>Hi. I’m Philipe Fatio.</h1>
+        <p>I’m a free&shy;lance soft&shy;ware de&shy;vel&shy;oper and a ro&shy;bot&shy;ics stu&shy;dent at <a href="http://www.master-robotics.ethz.ch/">ETH Zurich</a>.</p>
+        <p>I also write open source soft&shy;ware which you can find on <a href="https://github.com/fphilipe">GitHub</a>.</p>
+        <p>Oc&shy;ca&shy;sion&shy;ally I rant about ran&shy;dom stuff on <a href="https://twitter.com/fphilipe">Twitter</a>.</p>
+        <p>Feel free to <a href="mailto:contact@phili.pe">contact me</a>.</p>
+      </div>
+    </div>
+  </body>
 </html>
